@@ -4,9 +4,10 @@ import Navbar from '../components/Navbar'
 import GithubUser from '../components/GithubUser'
 import { useState, useRef, useEffect } from 'react'
 import { Loading } from '../components/Loading'
+import Footer from '../components/Footer'
 
 export default function Home() {
-  let API = 'https://api.github.com/users/octocat'
+  let API = 'https://api.github.com/users/wapborhan'
 
   const userRef = useRef(null)
   const [userName, setUserName] = useState('')
@@ -14,12 +15,12 @@ export default function Home() {
   const [isLoading, setLoading] = useState(false)
 
   function handleClick() {
-    setUserName(userRef.current.value);
+    setUserName(userRef.current.value)
   }
 
-  function handleKeyPress(e){
-    if(e.key ==='Enter'){
-      setUserName(userRef.current.value);
+  function handleKeyPress(e) {
+    if (e.key === 'Enter') {
+      setUserName(userRef.current.value)
     }
   }
   useEffect(() => {
@@ -34,11 +35,9 @@ export default function Home() {
         setData(data)
         setLoading(false)
       })
-  }, [userName]);
+  }, [userName])
 
-  if(!data) (
-  <p>No Profile data.</p>
-  )
+  if (!data) <p>No Profile data.</p>
 
   return (
     <div className="min-h-screen bg-gray-50 py-7 dark:bg-[#1e253f]">
@@ -47,18 +46,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      
-      {isLoading ? <Loading /> :
-      <>
-      <SearchBar
-        userName={userName}
-        handleClick={handleClick}
-        userRef={userRef}
-        handleKeyPress={handleKeyPress}
-      />
-      <GithubUser data={data} />
-      </>
-      }
+
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <SearchBar
+            userName={userName}
+            handleClick={handleClick}
+            userRef={userRef}
+            handleKeyPress={handleKeyPress}
+          />
+          <GithubUser data={data} />
+        </>
+      )}
+      <Footer />
     </div>
   )
 }
