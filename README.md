@@ -9,7 +9,7 @@ Preview the example live on [StackBlitz](http://stackblitz.com/):
 [![Open in Live](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://github-users-next.vercel.app/)
 
 ## Screenshoot
-![screenshoot](/screenshoot.png "Screenshoot").
+![screenshoot](/public/screencapture.png "Screenshoot").
 
 ## How to use
 
