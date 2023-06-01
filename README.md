@@ -4,9 +4,8 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](
 
 ## Preview
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
 
-[![Open in Live](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://github-users-next.vercel.app/)
+[![Open in Live](https://github-users-next.vercel.app/)
 
 ## Screenshoot
 ![screenshoot](/public/screencapture.png "Screenshoot").
