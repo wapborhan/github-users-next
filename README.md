@@ -5,7 +5,7 @@ This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](
 ## Preview
 
 
-[![Open in Live](https://github-users-next.vercel.app/)
+[Open in Live](https://github-users-next.vercel.app/)
 
 ## Screenshoot
 ![screenshoot](/public/screencapture.png "Screenshoot").
