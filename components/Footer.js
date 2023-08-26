@@ -7,7 +7,8 @@ const Footer = () => {
         Design By{' '}
         <a
           className="underline underline-offset-1"
-          href="http://www.srdreamlab.com"
+          href="https://www.srdreamlab.com"
+          target="__blank"
         >
           SR Dream Lab
         </a>
